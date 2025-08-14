@@ -2,11 +2,10 @@
 class Animal {
     String name;
 
-    void showInfo() {
+    void showInfo() { // it is a default 
         System.out.println("This is a " + name);
     }
 }
-
 // Birds
 class Crow extends Animal { //extends means its a "inherits from"
     Crow() {
@@ -79,7 +78,8 @@ public static void main(String[] args) {
     Rat rat = new Rat();
     Squirrel squirrel = new Squirrel();
     Alligator alligator = new Alligator();
-    crow.showInfo();
+    // These lines call the showInfo() method on each animal object.
+    crow.showInfo();   // Shows details about the Crow (e.g., type, sound, wings)
     eagle.showInfo();
     hawk.showInfo();
     duck.showInfo();
